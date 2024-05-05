@@ -5,20 +5,20 @@ const BaseBar = () => {
     
     <Box>
          <BarChart
-             colors={['#FB6376']} 
+             colors={['#CCDD91']} 
                     xAxis={[
                         {
                             id: 'barCategories',
-                            data: ['bar A', 'bar B', 'bar C'],
+                            data: ['bar 1', 'bar 2', 'bar 3','bar 4','bar 5','bar 6'],
                             scaleType: 'band',
                         },
                     ]}
                     series={[
                         {
-                            data: [2, 5, 3],
+                            data: [2, 5, 3, 4, 1, 6],
                         },
                     ]}
-                    width={500}
+                    width={600}
                     height={300}
                 />
 

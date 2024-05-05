@@ -53,15 +53,15 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{bgcolor: '#fb6376'}}>
+      <AppBar position="static" sx={{bgcolor: '#a6c732'}}>
         <Toolbar>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ justifyContent: 'center' }}
+            sx={{color: '#FFFFBF', justifyContent: 'center' }}
           >
-            <LunchDiningOutlinedIcon sx={{mr: 1}}/>
+            <LunchDiningOutlinedIcon sx={{color: '#FFFFBF',mr:1}}/>
             Buen Sabor
           </Typography>
           <Box sx={{ flexGrow: 1 }} />

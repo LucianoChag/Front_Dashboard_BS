@@ -32,23 +32,11 @@ const cardStyle = {
 //Renderización del componente
 const Inicio: React.FC = () => {
     return (
-        <Box component="main" sx={{ flexGrow: 1, pl: 9, pt: 4}}>
+        <Box component="main" sx={{ flexGrow: 1, pl: 9, pt: 4 }}>
             <Container>
-                <Typography component="h1" variant="h5" color="initial" >Bienvenido</Typography>
-                        
-                <Grid container spacing={3} sx={{ py: 2, alignContent: 'center' , justifyContent: 'center' }}>
-                    <Grid item xs={12} md={6}>
-                        <ChartCard title="Gráfico de Barras">
-                            <BaseBar />
-                        </ChartCard>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <ChartCard title="Gráfico de Pastel">
-                            <BasePie />
-                        </ChartCard>
-                    </Grid>
-                </Grid>
-                <Grid container spacing={3} sx={{ alignContent: 'center' , justifyContent: 'center'}}>
+                <Typography component="h1" variant="h5" color="initial" align="center" >Bienvenido</Typography>
+
+                <Grid container spacing={3} sx={{ alignContent: 'center', justifyContent: 'center' }}>
                     <Grid item xs={12} md={4}>
                         <Box sx={cardStyle}>
                             <InicioCard content={productosContent} />
@@ -63,6 +51,26 @@ const Inicio: React.FC = () => {
                         <Box sx={cardStyle}>
                             <InicioCard content={promocionesContent} />
                         </Box>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Box sx={cardStyle}>
+                            <InicioCard content={promocionesContent} />
+                        </Box>
+                    </Grid>
+                </Grid>
+                <Typography component="h1" variant="h5" color="initial" align="center" >Estadísticas</Typography>
+                <Grid container spacing={5} sx={{ py: 2, alignContent: 'center', justifyContent: 'center' }}>
+                    <Grid item xs={12} md={12}>
+                        <ChartCard title="Gráfico de Barras">
+                            <BaseBar />
+                        </ChartCard>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={3} sx={{ py: 2, alignContent: 'center', justifyContent: 'center' }}>
+                    <Grid item xs={12} md={12}>
+                        <ChartCard title="Gráfico de Pastel">
+                            <BasePie />
+                        </ChartCard>
                     </Grid>
                 </Grid>
             </Container>

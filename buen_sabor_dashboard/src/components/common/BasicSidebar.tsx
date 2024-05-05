@@ -11,10 +11,10 @@ const BasicSidebar: React.FC = () => {
 
     return (
         <div>
-            <CSidebar className="border-end d-flex flex-column" style={{ height: '100vh' }}>
+            <CSidebar className="border-end d-flex flex-column" style={{ height: '200vh', backgroundColor: '#e2e9d0' }}>
                 <CSidebarNav>
                     <CNavTitle>
-                        Dashboard
+                        Menu
                     </CNavTitle>
                     <CNavItem>
                         <Link to="/" className="nav-link" >

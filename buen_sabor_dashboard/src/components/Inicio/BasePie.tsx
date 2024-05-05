@@ -3,13 +3,16 @@ import { PieChart } from '@mui/x-charts/PieChart';
 export default function BasePie() {
   return (
     <PieChart
-        colors={['#5D2A42', '#FB6376', '#FCB1A6']} 
+        colors={['#5bbec0', '#a6c732', '#b9d162','#afd888', '#ccdd91', '#e0ebc2']} 
       series={[
         {
           data: [
-            { id: 0, value: 10, label: 'series A' },
-            { id: 1, value: 15, label: 'series B' },
-            { id: 2, value: 20, label: 'series C' },
+            { id: 0, value: 20, label: 'bar 1' },
+            { id: 1, value: 50, label: 'bar 2' },
+            { id: 3, value: 30, label: 'bar 3' },
+            { id: 4, value: 40, label: 'bar 4' },
+            { id: 5, value: 10, label: 'bar 5' },
+            { id: 6, value: 60, label: 'bar 6' },
           ],
         },
       ]}
