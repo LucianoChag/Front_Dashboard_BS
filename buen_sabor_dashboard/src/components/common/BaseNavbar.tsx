@@ -12,7 +12,7 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LunchDiningOutlinedIcon from '@mui/icons-material/LunchDiningOutlined';
 import Divider from '@mui/material/Divider';
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
-
+import logo from './buenSabor.png';
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -61,8 +61,9 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{color: '#FFFFBF', justifyContent: 'center' }}
           >
+            <img src="/logo/buenSabor.png" alt="Logo de Buen Sabor" style={{ width: '130px', height: '35px', marginRight: '2px' }} />
             <LunchDiningOutlinedIcon sx={{color: '#FFFFBF',mr:1}}/>
-            Buen Sabor
+           
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <IconButton
