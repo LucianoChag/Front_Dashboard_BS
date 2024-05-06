@@ -170,9 +170,9 @@ const Categoria = () => {
           <Button
             onClick={handleAddCategoria} // Maneja el evento de clic para mostrar el modal de categoría
             sx={{
-              bgcolor: "#fb6376",
+              bgcolor: "#a6c732",
               "&:hover": {
-                bgcolor: "#d73754",
+                bgcolor: "#a0b750",
               },
             }}
             variant="contained"
