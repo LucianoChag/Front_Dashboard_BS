@@ -24,7 +24,7 @@ const EmpleadoComponent = () => {
 
   const fetchEmpleados = async () => {
     try {
-      const empleados = await empleadoService.getAll(url + 'empleados');
+      const empleados = await empleadoService.getAll(url + 'empleado');
       dispatch(setEmpleado(empleados)); 
       setFilteredData(empleados); 
     } catch (error) {
