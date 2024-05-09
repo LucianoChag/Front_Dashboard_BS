@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Typography, Button, Container } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import TableComponent from "../Table/Table";
+import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import { setPromocion } from "../../redux/slices/Promocion";
 import PromocionService from "../../services/PromocionService";

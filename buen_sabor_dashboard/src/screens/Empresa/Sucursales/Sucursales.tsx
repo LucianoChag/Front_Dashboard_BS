@@ -4,7 +4,7 @@ import { Add } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../hooks/redux';
 import SearchBar from '../../common/SearchBar';
-import TableComponent from '../../Table/Table';
+import TableComponent from '../../../ui/Table/Table';
 import Column from '../../../types/Column';
 import SucursalService from '../../../services/SucursalService';
 import Sucursal from '../../../types/Sucursal';

@@ -3,13 +3,13 @@ import { Box, Typography, Button, Container, IconButton, Tooltip } from "@mui/ma
 import { Add, AddCircle, Visibility } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { setCategoria } from "../../redux/slices/categoria";
-import TableComponent from "../Table/Table";
+import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import CategoriaService from "../../services/CategoriaService";
 import Row from "../../types/Row";
 import Column from "../../types/Column";
-import ModalCategoria from "../Modal/ModalCategoria";
-import ModalSubcategoria from "../Modal/ModalSubcategorias";
+import ModalCategoria from "../../ui/Modal/ModalCategoria";
+import ModalSubcategoria from "../../ui/Modal/ModalSubcategorias";
 import { toggleModal } from "../../redux/slices/modal";
 import ICategoria from "../../types/Categoria";
 import { List, ListItem, ListItemText } from "@mui/material";

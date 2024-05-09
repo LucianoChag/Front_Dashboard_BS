@@ -57,7 +57,11 @@ const ModalCategoria: React.FC<{ getCategorias: () => void }> = ({
             try {
               if (elementActive) {
                 // Lógica para editar una categoría existente
-                await categoriaService.put(url + "categorias", values.id.toString(), values);
+                await categoriaService.put(
+                  url + "categorias",
+                  values.id.toString(),
+                  values
+                );
                 setSuccessMessage("Se ha actualizado correctamente.");
               } else {
                 // Lógica para agregar una nueva categoría

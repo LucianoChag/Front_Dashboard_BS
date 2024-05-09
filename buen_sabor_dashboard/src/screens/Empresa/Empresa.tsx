@@ -3,14 +3,14 @@ import { Box, Typography, Button, Container, Tooltip, IconButton } from "@mui/ma
 import { Add, Visibility, AddCircle } from "@mui/icons-material"; // Importamos los iconos adecuados
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { setEmpresa } from "../../redux/slices/empresa";
-import TableComponent from "../Table/Table";
+import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import EmpresaService from "../../services/EmpresaService";
 import Column from "../../types/Column";
 import Empresa from "../../types/Empresa";
 import { Link } from "react-router-dom";
 import { toggleModal } from "../../redux/slices/modal";
-import ModalEmpresa from "../Modal/ModalEmpresa";
+import ModalEmpresa from "../../ui/Modal/ModalEmpresa";
 import { handleDelete, handleSearch } from "../../utils/utilities";
 
 const EmpresaComponent = () => {

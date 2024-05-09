@@ -9,8 +9,8 @@ import Column from "../../types/Column";
 import { Box, Typography, Button, Container } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import SearchBar from "../common/SearchBar";
-import TableComponent from "../Table/Table";
-import ModalEmpleado from "../Modal/ModalEmpleado";
+import TableComponent from "../../ui/Table/Table";
+import ModalEmpleado from "../../ui/Modal/ModalEmpleado";
 
 const EmpleadoComponent = () => {
   const url = import.meta.env.VITE_API_URL;

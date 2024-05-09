@@ -3,7 +3,7 @@ import { Box, Typography, Button, Container } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { setArticuloManufacturado } from "../../redux/slices/articuloManufacturado";
-import TableComponent from "../Table/Table";
+import TableComponent from "../../ui/Table/Table";
 import ProductoService from "../../services/ProductoService";
 import Row from "../../types/Row";
 import Column from "../../types/Column";

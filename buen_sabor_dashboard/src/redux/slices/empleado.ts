@@ -1,3 +1,4 @@
+//empleado.ts
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import empleado from '../../types/Empleado';
