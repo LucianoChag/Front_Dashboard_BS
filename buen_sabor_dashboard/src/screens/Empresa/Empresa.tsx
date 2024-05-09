@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, Typography, Button, Container, Tooltip, IconButton } from "@mui/material";
 import { Add, Visibility, AddCircle } from "@mui/icons-material"; // Importamos los iconos adecuados
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { setEmpresa } from "../../redux/slices/empresa";
+import { setEmpresa } from "../../redux/slices/slicesUnificados";
 import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import EmpresaService from "../../services/EmpresaService";
@@ -18,7 +18,7 @@ const EmpresaComponent = () => {
   const dispatch = useAppDispatch();
   const empresaService = new EmpresaService();
   const globalEmpresas = useAppSelector(
-    (state) => state.empresa.empresa
+    (state) => state.empresa.entities
   );
 
   const [filteredData, setFilteredData] = useState<Empresa[]>([]);

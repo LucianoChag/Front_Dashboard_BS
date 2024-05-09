@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import EmpleadoService from "../../services/EmpleadoService";
 import Empleado from "../../types/Empleado";
-import { setEmpleado } from "../../redux/slices/empleado";
+import { setEmpleado } from "../../redux/slices/slicesUnificados";
 import { handleDelete, handleSearch } from "../../utils/utilities";
 import { toggleModal } from "../../redux/slices/modal";
 import Column from "../../types/Column";
@@ -17,7 +17,7 @@ const EmpleadoComponent = () => {
   const dispatch = useAppDispatch();
   const empleadoService = new EmpleadoService();
   const globalEmpleados = useAppSelector(
-    (state) => state.empleado.empleado
+    (state) => state.empleado.entities
   );
 
   const [filteredData, setFilteredData] = useState<Empleado[]>([]);

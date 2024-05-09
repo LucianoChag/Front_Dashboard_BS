@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import { Add } from "@mui/icons-material";
-import { setArticuloInsumo } from "../../redux/slices/articuloInsumo";
+import { setArticuloInsumo } from "../../redux/slices/slicesUnificados";
 import InsumoService from "../../services/InsumoService";
 import Row from "../../types/Row";
 import Column from "../../types/Column";
@@ -15,7 +15,7 @@ import IArticuloInsumo from "../../types/ArticuloInsumo";
 const Insumo = () => {
   const dispatch = useAppDispatch();
   const globalArticulosInsumos = useAppSelector(
-    (state) => state.articuloInsumo.articuloInsumo
+    (state) => state.articuloInsumo.entities
   );
   const url = import.meta.env.VITE_API_URL;
   const insumoService = new InsumoService();

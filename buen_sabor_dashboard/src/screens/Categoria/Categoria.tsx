@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, Typography, Button, Container, IconButton, Tooltip } from "@mui/material";
 import { Add, AddCircle, Visibility } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { setCategoria } from "../../redux/slices/categoria";
+import { setCategoria } from "../../redux/slices/slicesUnificados";
 import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
 import CategoriaService from "../../services/CategoriaService";
@@ -21,7 +21,7 @@ const Categoria = () => {
   const categoriaService = new CategoriaService();
   // Estado global de Redux
   const globalCategorias = useAppSelector(
-    (state) => state.categoria.categoria
+    (state) => state.categoria.entities
   );
 
   const [filteredData, setFilteredData] = useState<Row[]>([]);

@@ -9,7 +9,7 @@ import Column from '../../../types/Column';
 import SucursalService from '../../../services/SucursalService';
 import Sucursal from '../../../types/Sucursal';
 import EmpresaService from '../../../services/EmpresaService'; // Importa el servicio de la empresa
-import { setSucursal } from '../../../redux/slices/sucursal';
+import { setSucursal } from '../../../redux/slices/slicesUnificados';
 import { handleDelete, handleSearch } from '../../../utils/utilities';
 
 const SucursalesEmpresa: React.FC = () => {
@@ -22,7 +22,7 @@ const SucursalesEmpresa: React.FC = () => {
   const url = import.meta.env.VITE_API_URL;
 
   const globalSucursales = useAppSelector(
-    (state) => state.sucursal.sucursal
+    (state) => state.sucursal.entities
   );
 
   const fetchSucursales = async () => {

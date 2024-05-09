@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, Typography, Button, Container } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { setArticuloManufacturado } from "../../redux/slices/articuloManufacturado";
+import { setArticuloManufacturado } from "../../redux/slices/slicesUnificados";
 import TableComponent from "../../ui/Table/Table";
 import ProductoService from "../../services/ProductoService";
 import Row from "../../types/Row";
@@ -16,7 +16,7 @@ const Producto = () => {
   const productoService = new ProductoService();
   // Estado global de Redux
   const globalArticulosManufacturados = useAppSelector(
-    (state) => state.articuloManufacturado.articuloManufacturado
+    (state) => state.articuloManufacturado.entities
   );
 
   const [filteredData, setFilteredData] = useState<Row[]>([]);

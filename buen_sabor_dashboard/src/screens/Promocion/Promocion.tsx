@@ -4,7 +4,7 @@ import { Add } from "@mui/icons-material";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import TableComponent from "../../ui/Table/Table";
 import SearchBar from "../common/SearchBar";
-import { setPromocion } from "../../redux/slices/Promocion";
+import { setPromocion } from "../../redux/slices/slicesUnificados";
 import PromocionService from "../../services/PromocionService";
 import Row from "../../types/Row";
 import Column from "../../types/Column";
@@ -15,7 +15,7 @@ const Promocion: React.FC = () => {
   const dispatch = useAppDispatch();
   // Obtiene el estado global de Redux relacionado con las promociones.
   const globalPromociones = useAppSelector(
-    (state) => state.promocion.promocion
+    (state) => state.promocion.entities
   );
 
   const url = import.meta.env.VITE_API_URL;
