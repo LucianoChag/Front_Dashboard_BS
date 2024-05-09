@@ -33,10 +33,10 @@ const cardStyle = {
 //<img src="./logo/bienvenido.png" alt="Bienvenido" style={{ display: 'block', margin: 'auto', width: '200px', height: 'auto' }} />
 const Inicio: React.FC = () => {
     return (
-        <Box component="main" sx={{ flexGrow: 1, pl: 9, pt: 4 }}>
+        <Box component="main" sx={{ flexGrow: 1, pl: 9, pt: 4, backgroundColor: '#f0f0f0' }}>
             <Container>
-            <Typography component="h1" variant="h5" color="initial" align="center" >Bienvenido</Typography>
-                <Grid container spacing={4} sx={{ alignContent: 'center', justifyContent: 'center' }}>
+                <Typography component="h1" variant="h5" color="initial" align="center" >Bienvenido</Typography>
+                <Grid container spacing={3} sx={{ alignContent: 'center', justifyContent: 'center' }}>
                     <Grid item xs={12} md={4}>
                         <Box sx={cardStyle}>
                             <InicioCard content={productosContent} />
@@ -55,16 +55,16 @@ const Inicio: React.FC = () => {
 
                 </Grid>
                 <Typography component="h1" variant="h5" color="initial" align="center" >Estadísticas</Typography>
-                <Grid container spacing={5} sx={{ py: 2, alignContent: 'center', justifyContent: 'center' }}>
-                    <Grid item xs={12} md={12}>
-                        <ChartCard title="Gráfico de Barras">
+                <Grid container spacing={3} sx={{ py: 2, alignContent: 'center', justifyContent: 'center' }}>
+                    <Grid item xs={12} md={12} sx={{ height: '400px' }}> 
+                        <ChartCard title="">
                             <BaseBar />
                         </ChartCard>
                     </Grid>
                 </Grid>
                 <Grid container spacing={3} sx={{ py: 2, alignContent: 'center', justifyContent: 'center' }}>
                     <Grid item xs={12} md={12}>
-                        <ChartCard title="Gráfico de Pastel">
+                        <ChartCard title="">
                             <BasePie />
                         </ChartCard>
                     </Grid>
