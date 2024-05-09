@@ -11,27 +11,27 @@ const NewBarChart = () => {
   const [itemNb, setItemNb] = React.useState(5);
   const [skipAnimation, setSkipAnimation] = React.useState(false);
 
-  const handleItemNbChange = (event: Event, newValue: number | number[]) => {
+  const handleItemNbChange = (_event: Event, newValue: number | number[]) => {
     if (typeof newValue !== 'number') {
       return;
     }
     setItemNb(newValue);
   };
-  const handleSeriesNbChange = (event: Event, newValue: number | number[]) => {
+  const handleSeriesNbChange = (_event: Event, newValue: number | number[]) => {
     if (typeof newValue !== 'number') {
       return;
     }
     setSeriesNb(newValue);
   };
 
-  const dataset = [
+/*  const dataset = [
     { month: 'Jan', seoul: 20 },
     { month: 'Feb', seoul: 45 },
     { month: 'Mar', seoul: 13 },
     { month: 'Apr', seoul: 60 },
     { month: 'May', seoul: 35 },
     { month: 'Jun', seoul: 15 },
-  ];
+  ]; */
 
   const chartSetting = {
     height: 300,
