@@ -12,7 +12,7 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LunchDiningOutlinedIcon from '@mui/icons-material/LunchDiningOutlined';
 import Divider from '@mui/material/Divider';
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
-import logo from './buenSabor.png';
+
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 

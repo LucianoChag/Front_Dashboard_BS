@@ -24,7 +24,7 @@ const EmpleadoComponent = () => {
 
   const fetchEmpleados = async () => {
     try {
-      const empleados = await empleadoService.getAll(url + 'empleados');
+      const empleados = await empleadoService.getAll(url + 'empleado');
       dispatch(setEmpleado(empleados)); 
       setFilteredData(empleados); 
     } catch (error) {
@@ -78,9 +78,9 @@ const EmpleadoComponent = () => {
           <Button
             onClick={handleAddEmpleado}
             sx={{
-              bgcolor: "#fb6376",
+              bgcolor: "#a6c732",
               "&:hover": {
-                bgcolor: "#d73754",
+                bgcolor: "#a0b750",
               },
             }}
             variant="contained"

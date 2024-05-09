@@ -10,7 +10,6 @@ import Row from "../../types/Row";
 import Column from "../../types/Column";
 import { handleDelete, handleSearch } from "../../utils/utilities";
 
-
 const Promocion: React.FC = () => {
   // Obtiene la función de despacho de acciones de Redux.
   const dispatch = useAppDispatch();
@@ -74,10 +73,11 @@ const Promocion: React.FC = () => {
       id: "imagen",
       label: "Imagen",
       renderCell: (rowData) => (
+        
         <img
           src={rowData.imagenes.length > 0 ? rowData.imagenes[0].url : ""}
           alt="Imagen"
-          style={{ width: 50, height: 50 }}
+          style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover' }}
         />
       ),
     },
@@ -97,9 +97,9 @@ const Promocion: React.FC = () => {
           </Typography>
           <Button
             sx={{
-              bgcolor: "#fb6376",
+              bgcolor: "#a6c732",
               "&:hover": {
-                bgcolor: "#d73754",
+                bgcolor: "#a0b750",
               },
             }}
             variant="contained"

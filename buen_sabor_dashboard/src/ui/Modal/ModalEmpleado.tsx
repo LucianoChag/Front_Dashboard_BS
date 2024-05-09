@@ -65,11 +65,11 @@ const ModalEmpleado: React.FC<{ getEmpleados: () => void }> = ({
                         try {
                             if (elementActive) {
                                 // Lógica para editar una empresa existente
-                                await empleadoService.put(url + "empleados", values.id.toString(), values);
+                                await empleadoService.put(url + "empleado", values.id.toString(), values);
                                 setSuccessMessage("Se ha actualizado correctamente.");
                             } else {
                                 // Lógica para agregar una nueva empresa
-                                await empleadoService.post(url + "empleados", values);
+                                await empleadoService.post(url + "empleado", values);
                                 setSuccessMessage("Se ha agregado correctamente.");
                             }
                             getEmpleados(); // Actualiza las empresas

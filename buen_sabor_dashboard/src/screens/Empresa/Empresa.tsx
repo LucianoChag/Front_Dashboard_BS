@@ -96,9 +96,9 @@ const EmpresaComponent = () => {
           <Button
             onClick={handleAddEmpresa}
             sx={{
-              bgcolor: "#fb6376",
+              bgcolor: "#a6c732",
               "&:hover": {
-                bgcolor: "#d73754",
+                bgcolor: "#a0b750",
               },
             }}
             variant="contained"

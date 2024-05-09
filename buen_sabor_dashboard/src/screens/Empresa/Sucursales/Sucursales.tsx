@@ -101,7 +101,7 @@ const SucursalesEmpresa: React.FC = () => {
             sx={{
               bgcolor: "#fb6376",
               "&:hover": {
-                bgcolor: "#d73754",
+                bgcolor: "#a0b750",
               },
             }}
             variant="contained"
