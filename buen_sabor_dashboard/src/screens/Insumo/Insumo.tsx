@@ -21,7 +21,7 @@ const Insumo = () => {
   const insumoService = new InsumoService();
   const [filteredData, setFilteredData] = useState<Row[]>([]);
   const [openModal, setOpenModal] = useState(false);
-  const [selectedArticle, setSelectedArticle] =
+  const [_selectedArticle, setSelectedArticle] =
     useState<IArticuloInsumo | null>(null);
 
   const fetchArticulosInsumos = async () => {
@@ -50,10 +50,11 @@ const Insumo = () => {
   };
 
   const handleEdit = (index: number) => {
-    const selectedArticle = filteredData[index] as IArticuloInsumo;
-    setSelectedArticle(selectedArticle);
+    const newSelectedArticle = filteredData[index] as IArticuloInsumo;
+    setSelectedArticle(newSelectedArticle);
     setOpenModal(true);
   };
+   // La variable selectedArticle se utiliza para actualizar el estado del artículo seleccionado.
 
   const onDelete = async (index: number) => {
     handleDelete(

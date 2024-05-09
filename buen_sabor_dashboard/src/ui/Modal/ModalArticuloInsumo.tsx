@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import IArticuloInsumo from "../../types/ArticuloInsumo";
 import ArticuloInsumoService from "../../services/InsumoService";
 import Swal from "sweetalert2";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
+import { useAppSelector } from "../../hooks/redux";
 
 
 interface ModalArticuloInsumoProps {
@@ -40,7 +40,7 @@ const ModalArticuloInsumo: React.FC<ModalArticuloInsumoProps> = ({
   });
 
   const elementActive = useAppSelector((state) => state.tabla.elementActive);
-  const dispatch = useAppDispatch();
+  //const dispatch = useAppDispatch();
 
   useEffect(() => {
     setInitialValues({
@@ -96,7 +96,7 @@ const ModalArticuloInsumo: React.FC<ModalArticuloInsumoProps> = ({
           })}
           initialValues={initialValues}
           enableReinitialize={true}
-          onSubmit={async (values: IArticuloInsumo, { setSubmitting }) => {
+          onSubmit={async (values: IArticuloInsumo) => {
             try {
               if (elementActive) {
                 await articuloInsumoService.put(

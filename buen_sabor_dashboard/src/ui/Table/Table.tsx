@@ -19,7 +19,7 @@ const TableComponent: React.FC<Props> = ({ data, columns, onEdit, onDelete }) =>
   const [orderBy, setOrderBy] = useState<keyof Row>('');
   const [order, setOrder] = useState<'asc' | 'desc'>('asc');
 
-  const handleChangePage = (event: unknown, newPage: number) => {
+  const handleChangePage = (_event: React.MouseEvent<HTMLButtonElement> | null, newPage: number) => {
     setPage(newPage);
   };
 
