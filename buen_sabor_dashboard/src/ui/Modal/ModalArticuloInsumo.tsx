@@ -6,8 +6,7 @@ import IArticuloInsumo from "../../types/ArticuloInsumo";
 import ArticuloInsumoService from "../../services/InsumoService";
 import Swal from "sweetalert2";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { toggleModal } from "../../redux/slices/modal";
-import CategoriaService from "../../services/CategoriaService";
+
 
 interface ModalArticuloInsumoProps {
   open: boolean;

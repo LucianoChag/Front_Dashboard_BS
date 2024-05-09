@@ -75,7 +75,7 @@ const Categoria = () => {
     );
   };
 
-  const handleOpenSubcategoriaModal = (categoria: ICategoria) => {
+  const handleOpenSubcategoriaModal = (categoria: ICategoria | any) => {
     setCategoriaPadre(categoria);
     setShowSubcategoriaModal(true);
   };
